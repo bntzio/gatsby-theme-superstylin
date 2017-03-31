@@ -36,6 +36,7 @@
     "markdown-it-sub": "^1.0.0",
     "moment": "^2.17.1",
     "object-assign": "^4.1.0",
+    "polished": "^1.0.1",
     "react-helmet": "^3.2.2",
     "recompose": "^0.21.2",
     "styled-components": "^1.2.1",
