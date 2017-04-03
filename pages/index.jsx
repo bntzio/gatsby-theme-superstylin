@@ -17,7 +17,7 @@ export default class Index extends React.Component {
       <Wrapper>
         <Helmet title={config.siteTitle} meta={[{ 'name': 'description', 'content': 'sample' }]} />
         <Title>Superstylin'</Title>
-        <Subtitle>A Gatsby starter with styled-components</Subtitle>
+        <Subtitle>A Gatsby starter with styled-components 💅</Subtitle>
         <StyledLink to={prefixLink('/about/')} underline>What's this?</StyledLink>
         <StyledLink to={prefixLink('/components/')} underline>Components</StyledLink>
         <StyledLink to={prefixLink('/blog/')} underline>Blog</StyledLink>
