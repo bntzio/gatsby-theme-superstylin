@@ -1,6 +1,7 @@
 import styled, { injectGlobal, css } from 'styled-components';
 import { darken, lighten } from 'polished';
 import { Link } from 'react-router';
+import { Row } from 'hedron';
 
 /*
  * Global Styles
@@ -176,6 +177,13 @@ export const Text = styled.p`
 `;
 
 /*
+ * PostLinkContainer
+ */
+export const PostLinkContainer = styled(Row)`
+  border-bottom: 2px solid ${lighten(0.1, '#db7093')};
+`;
+
+/*
  * PostLinkTitle
  */
 export const PostLinkTitle = styled.h2`
@@ -189,8 +197,6 @@ export const PostLinkTitle = styled.h2`
 export const PostLinkDescription = styled.p`
   font-size: 16px;
   font-weight: 400;
-  padding-bottom: 35px;
-  border-bottom: 2px solid ${lighten(0.1, '#db7093')};
 `;
 
 /*
@@ -219,5 +225,19 @@ export const PostBody = styled.div`
 export const PostDate = styled.span`
   font-size: 13px;
   font-weight: lighter;
-  margin-top: 100px;
+`;
+
+/*
+ * From
+ */
+export const From = styled.div`
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  font-size: 13px;
+
+  a {
+    text-decoration: none;
+    font-weight: bolder;
+  }
 `;

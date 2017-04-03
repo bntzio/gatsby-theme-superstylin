@@ -7,7 +7,8 @@ import {
   Title,
   Subtitle,
   StyledLink,
-  StyledAnchor
+  StyledAnchor,
+  From
 } from '../components/styled/';
 
 export default class Index extends React.Component {
@@ -20,7 +21,8 @@ export default class Index extends React.Component {
         <StyledLink to={prefixLink('/about/')} underline>What's this?</StyledLink>
         <StyledLink to={prefixLink('/components/')} underline>Components</StyledLink>
         <StyledLink to={prefixLink('/blog/')} underline>Blog</StyledLink>
-        <StyledAnchor href="https://github.com/bntzio/gatsby-starter-superstylin">Github</StyledAnchor>
+        <StyledAnchor href="https://github.com/bntzio/gatsby-starter-superstylin" target="_blank">Github</StyledAnchor>
+        <From>From <a href="https://twitter.com/bntzio" target="_blank">@bntzio</a> with &lt;3</From>
       </Wrapper>
     )
   }
