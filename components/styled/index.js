@@ -7,9 +7,13 @@ import { Link } from 'react-router';
  * Global Styles
  */
 injectGlobal`
+  @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
   body {
+    font-family: 'Slabo 27px', serif;
     color: palevioletred;
     background: papayawhip;
+    text-align: center;
   }
 `;
 
@@ -28,6 +32,7 @@ export const Wrapper = styled.div`
  */
  export const Title = styled.h1`
    font-size: 30px;
+   text-decoration: underline;
  `;
 
 /*
@@ -45,6 +50,11 @@ export const Subtitle = styled.h2`
 export const StyledLink = styled(Link)`
   color: palevioletred;
   font-size: 18px;
+  text-decoration: ${props => props.underline ? 'underline' : 'none'};
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 /*
@@ -60,6 +70,7 @@ export const StyledLink = styled(Link)`
  */
 export const Message = styled.h2`
   font-size: 27px;
+  text-decoration: underline;
 `;
 
 /*
@@ -71,7 +82,6 @@ export const Button = styled.button`
   font-size: 16px;
   font-weight: 600;
   background-color: black;
-  border-radius: 4px;
   border: 0;
   cursor: pointer;
 `;
