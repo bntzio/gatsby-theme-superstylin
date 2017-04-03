@@ -19,7 +19,7 @@ export default class Index extends React.Component {
         <Subtitle>A Gatsby starter with styled-components</Subtitle>
         <StyledLink to={prefixLink('/about/')} underline>What's this?</StyledLink>
         <StyledLink to={prefixLink('/components/')} underline>Components</StyledLink>
-        <StyledLink to={prefixLink('/essays/')} underline>Essays</StyledLink>
+        <StyledLink to={prefixLink('/blog/')} underline>Blog</StyledLink>
         <StyledAnchor href="https://github.com/bntzio/gatsby-starter-superstylin">Github</StyledAnchor>
       </Wrapper>
     )

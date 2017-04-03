@@ -46,6 +46,7 @@
   "devDependencies": {
     "babel-eslint": "^7.2.0",
     "eslint": "^3.x",
-    "eslint-plugin-react": "^6.10.3"
+    "eslint-plugin-react": "^6.10.3",
+    "uuid": "^3.0.1"
   }
 }

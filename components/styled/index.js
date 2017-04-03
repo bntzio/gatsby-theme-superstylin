@@ -1,5 +1,5 @@
 import styled, { injectGlobal, css } from 'styled-components';
-import { darken } from 'polished';
+import { darken, lighten } from 'polished';
 import { Link } from 'react-router';
 
 /*
@@ -173,4 +173,51 @@ export const Text = styled.p`
   ${ media.tablet`
     font-size: 20px;
   ` }
+`;
+
+/*
+ * PostLinkTitle
+ */
+export const PostLinkTitle = styled.h2`
+  font-size: 18px;
+  font-weight: 900;
+`;
+
+/*
+ * PostLinkDescription
+ */
+export const PostLinkDescription = styled.p`
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 35px;
+  border-bottom: 2px solid ${lighten(0.1, '#db7093')};
+`;
+
+/*
+ * PostTitle
+ */
+export const PostTitle = styled.h1`
+  font-size: 30px;
+  text-decoration: underline;
+  margin-bottom: 7px;
+`;
+
+/*
+ * PostBody
+ */
+export const PostBody = styled.div`
+ padding: 0px 50px;
+ font-size: 17px;
+ ${ media.tablet`
+   font-size: 20px;
+ ` }
+`;
+
+/*
+ * PostDate
+ */
+export const PostDate = styled.span`
+  font-size: 13px;
+  font-weight: lighter;
+  margin-top: 100px;
 `;
