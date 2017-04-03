@@ -1,5 +1,4 @@
-import { injectGlobal } from 'styled-components';
-import styled from 'styled-components';
+import styled, { injectGlobal, css } from 'styled-components';
 import { darken } from 'polished';
 import { Link } from 'react-router';
 
@@ -15,7 +14,26 @@ injectGlobal`
     background: papayawhip;
     text-align: center;
   }
+
+  a {
+    color: palevioletred;
+
+    &:hover, &:focus, &:visited {
+      color: palevioletred;
+    }
+  }
 `;
+
+/*
+ * Media Queries
+ */
+const media = {
+  tablet: (...args) => css`
+    @media (min-width: 420px) {
+      ${ css(...args) }
+    }
+  `
+}
 
 /*
  * Wrapper
@@ -136,7 +154,6 @@ export const DangerButton = styled(Button)`
   }
 `;
 
-
 /*
  * Input
  */
@@ -149,21 +166,11 @@ export const Input = styled.input`
 `;
 
 /*
- * ComponentsWrapper
+ * Text
  */
-export const ComponentsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 5%;
-`;
-
-/*
- * ComponentsWrapperInner
- */
-export const ComponentsWrapperInner = styled.div`
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
-  margin-bottom: 35px;
+export const Text = styled.p`
+  font-size: ${props => props.fontSize || '16px'};
+  ${ media.tablet`
+    font-size: 20px;
+  ` }
 `;
