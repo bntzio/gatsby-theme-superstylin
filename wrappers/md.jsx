@@ -4,6 +4,7 @@ import { prefixLink } from 'gatsby-helpers';
 import { Page, Row, Column } from 'hedron';
 import { config } from 'config';
 import Post from '../components/Post';
+import Error from '../components/Error';
 import { StyledLink } from '../components/styled/';
 
 class MarkdownWrapper extends React.Component {
@@ -12,22 +13,28 @@ class MarkdownWrapper extends React.Component {
     const post = route.page.data;
     const layout = post.layout;
     let template;
+    let header;
 
     if (layout === 'post') {
       template = <Post {...this.props} />;
+      header = (
+        <Row>
+          <Column>
+            <StyledLink to={prefixLink('/blog/')}>back to articles</StyledLink>
+          </Column>
+        </Row>
+      );
+    } else if (layout === 'error') {
+      template = <Error {...this.props} />;
     }
 
     return (
-     <Page>
-       <Helmet title={`${config.siteTitle} - ${post.title}`} />
-       <Row>
-         <Column>
-           <StyledLink to={prefixLink('/blog/')}>back to articles</StyledLink>
-         </Column>
-       </Row>
-       {template}
-     </Page>
-   );
+      <Page>
+        <Helmet title={`${config.siteTitle} - ${post.title}`} />
+        {header}
+        {template}
+      </Page>
+    );
   }
 }
 

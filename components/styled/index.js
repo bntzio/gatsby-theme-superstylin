@@ -241,3 +241,23 @@ export const From = styled.div`
     font-weight: bolder;
   }
 `;
+
+/*
+ * ErrorTitle
+ */
+export const ErrorTitle = styled.h4`
+  font-size: 34px;
+  margin-bottom: 0;
+`;
+
+/*
+ * ErrorBody
+ */
+export const ErrorBody = styled.div`
+  font-size: 18px;
+
+  a {
+    display: block;
+    margin-top: 50px;
+  }
+`;
