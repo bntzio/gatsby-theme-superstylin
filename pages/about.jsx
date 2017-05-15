@@ -1,10 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { prefixLink } from 'gatsby-helpers';
-import { Row, Column, Page } from 'hedron';
 import { config } from 'config';
 import _ from 'lodash';
 import {
+  Page,
+  Row,
+  Column,
   Message,
   StyledLink,
   Text

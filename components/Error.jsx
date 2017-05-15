@@ -1,7 +1,6 @@
 import React from 'react';
-import { Column, Row } from 'hedron';
 import { prefixLink } from 'gatsby-helpers';
-import { ErrorTitle, ErrorBody, StyledLink } from './styled/';
+import { ErrorTitle, ErrorBody, StyledLink, Row, Column } from './styled/';
 
 export default class Error extends React.Component {
   render() {

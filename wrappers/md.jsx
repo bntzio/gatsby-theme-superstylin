@@ -1,11 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { prefixLink } from 'gatsby-helpers';
-import { Page, Row, Column } from 'hedron';
 import { config } from 'config';
 import Post from '../components/Post';
 import Error from '../components/Error';
-import { StyledLink } from '../components/styled/';
+import { StyledLink, Page, Row, Column } from '../components/styled/';
 
 class MarkdownWrapper extends React.Component {
   render() {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Column } from 'hedron';
 import {
+  Column,
   PostLinkContainer,
   PostLinkTitle,
   PostLinkDescription,

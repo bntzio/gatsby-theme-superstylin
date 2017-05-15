@@ -1,13 +1,15 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { prefixLink } from 'gatsby-helpers';
-import { Page, Row, Column } from 'hedron';
 import { config } from 'config';
 import _ from 'lodash';
 import moment from 'moment';
 import uuid from 'uuid';
 import PostLink from '../components/PostLink';
 import {
+  Page,
+  Row,
+  Column,
   Message,
   StyledLink
 } from '../components/styled/';

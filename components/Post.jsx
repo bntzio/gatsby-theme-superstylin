@@ -1,7 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import { Column, Row } from 'hedron';
-import { PostTitle, PostBody, PostDate } from './styled/';
+import { PostTitle, PostBody, PostDate, Row, Column } from './styled/';
 
 export default class Post extends React.Component {
   render() {
