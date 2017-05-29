@@ -1,7 +1,6 @@
 import styled, { injectGlobal, css } from 'styled-components';
 import { darken, lighten } from 'polished';
 import { Link } from 'react-router';
-import { Row } from 'hedron';
 import { compute, ifDefined } from '../../utils/hedron';
 import {
   Page as HedronPage,
