@@ -12,8 +12,9 @@
     "url": "git+https://github.com/bntzio/gatsby-starter-superstylin.git"
   },
   "keywords": [
+    "react",
     "gatsby",
-    "react"
+    "styled-components"
   ],
   "author": "Enrique Benitez <bntz.io>",
   "license": "MIT",
@@ -23,30 +24,18 @@
   "homepage": "https://github.com/bntzio/gatsby-starter-superstylin#readme",
   "dependencies": {
     "front-matter": "^2.1.1",
-    "gatsby": "^0.12.20",
-    "hedron": "^0.6.0",
-    "highlight.js": "^9.8.0",
-    "history": "^2.0.2",
-    "js-yaml": "^3.7.0",
-    "lodash": "^4.17.4",
-    "markdown-it": "^7.0.1",
-    "markdown-it-abbr": "^1.0.3",
-    "markdown-it-attrs": "^0.6.3",
-    "markdown-it-deflist": "^2.0.1",
-    "markdown-it-footnote": "^3.0.1",
-    "markdown-it-sub": "^1.0.0",
-    "moment": "^2.17.1",
-    "object-assign": "^4.1.0",
-    "polished": "^1.0.1",
-    "react-helmet": "^3.2.2",
-    "recompose": "^0.21.2",
-    "styled-components": "^1.2.1",
-    "toml-js": "0.0.8"
+    "gatsby": "^1.9.139",
+    "gatsby-link": "^1.6.32",
+    "styled-components": "^1.2.1"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.0",
     "eslint": "^3.x",
-    "eslint-plugin-react": "^6.10.3",
-    "uuid": "^3.0.1"
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
