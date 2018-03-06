@@ -23,7 +23,7 @@ const StyledAbout = styled.div`
   }
 `
 
-export default ({ children }) => (
+export default () => (
   <StyledAbout>
     <p>
       Superstylin is a <a href='https://www.gatsbyjs.org' target='_blank'>Gatsby</a> starter designed to get you up and running with <a href='https://www.styled-components.com' target='_blank'>styled-components</a> 💅<br />
