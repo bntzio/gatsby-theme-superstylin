@@ -4,14 +4,13 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import BlogHeader from '../components/BlogHeader'
 
 const Main = styled.main`
   padding: 0 1rem;
 `
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({children, location}) => (
   <Main>
     <Helmet
       title='Superstylin | A Gatsby Starter with Style 🕶️'
@@ -22,16 +21,11 @@ const TemplateWrapper = ({ children }) => (
         }
       ]}
     />
-    <Header>
-      <h1><Link to='/'>Superstylin'</Link></h1>
-      <h2>A <span>Gatsby Starter</span> with <span>Style</span> <i>🕶️</i></h2>
-    </Header>
+    <BlogHeader>
+      <h1><Link to={location.pathname === '/blog' ? '/' : '/blog'}>Superstylin'</Link></h1>
+    </BlogHeader>
 
     {children()}
-
-    <Footer>
-      <p>Made by <a href='https://twitter.com/bntzio' target='_blank'>@bntzio</a> with ❤️</p>
-    </Footer>
   </Main>
 )
 

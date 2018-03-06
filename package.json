@@ -25,7 +25,12 @@
   "dependencies": {
     "gatsby": "^1.9.139",
     "gatsby-link": "^1.6.32",
-    "styled-components": "^1.2.1"
+    "gatsby-plugin-styled-components": "^2.0.9",
+    "gatsby-source-filesystem": "^1.5.26",
+    "gatsby-transformer-remark": "^1.7.34",
+    "moment": "^2.21.0",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^3.2.0"
   },
   "devDependencies": {
     "standard": "^11.0.0"
