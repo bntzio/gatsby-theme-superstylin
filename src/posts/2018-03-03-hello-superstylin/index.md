@@ -1,6 +1,6 @@
 ---
 path: '/hello-superstylin'
-date: '03-03-2018'
+date: '2018-03-03'
 title: 'Superstylin is cool 😎'
 ---
 

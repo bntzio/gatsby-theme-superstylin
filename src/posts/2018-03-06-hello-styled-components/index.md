@@ -1,7 +1,7 @@
 ---
-path: '/hello-react'
-date: '03-04-2018'
-title: 'React is powerful 👊'
+path: '/hello-styled-components'
+date: '2018-03-06'
+title: 'Styled Components are beautiful 💅'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod porttitor vestibulum. Nulla sodales nunc leo, in efficitur risus suscipit at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ultrices erat sem, sit amet pulvinar lectus hendrerit eu. Suspendisse ac metus id nulla laoreet faucibus. Praesent lacinia justo leo, vitae placerat tortor congue id. Donec pulvinar dui ac porttitor ultricies. Integer enim erat, maximus sit amet vulputate vitae, scelerisque ut massa. Nulla vitae odio nec sapien feugiat laoreet eget ut odio. Morbi posuere quam sagittis turpis mollis, ac pulvinar enim placerat.

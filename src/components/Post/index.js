@@ -40,7 +40,7 @@ const StyledPost = styled.div`
 
 const Post = ({ postData }) => {
   const { html, frontmatter } = postData
-  const m = moment(frontmatter.date, 'MM DD YYYY')
+  const m = moment(frontmatter.date, 'YYYY MM DD')
   return (
     <StyledPost>
       <h1>{frontmatter.title}</h1>
