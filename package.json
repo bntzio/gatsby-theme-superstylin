@@ -25,6 +25,7 @@
   "dependencies": {
     "gatsby": "^1.9.139",
     "gatsby-link": "^1.6.32",
+    "gatsby-plugin-react-helmet": "^2.0.6",
     "gatsby-plugin-styled-components": "^2.0.9",
     "gatsby-source-filesystem": "^1.5.26",
     "gatsby-transformer-remark": "^1.7.34",
