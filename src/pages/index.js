@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import Menu from '../components/Menu'
 import icon from '../assets/external-link.svg'
-import Layout from '../components/Layouts'
+import Layout from '../components/layouts'
 
 export default () => (
   <Layout>

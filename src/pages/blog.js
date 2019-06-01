@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import PostList from '../components/PostList'
-import Layout from '../components/Layouts/blog'
+import Layout from '../components/layouts/blog'
 
 export const pageQuery = graphql`
   query IndexQuery {

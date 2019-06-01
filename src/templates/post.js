@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
 import Post from '../components/Post'
+import Layout from '../components/layouts/blog'
 
 export const postQuery = graphql`
   query BlogPostByPath($path: String!) {
@@ -17,13 +18,13 @@ export const postQuery = graphql`
   }
 `
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const post = data.markdownRemark
 
   return (
-    <div>
+    <Layout location={location}>
       <Helmet title={post.frontmatter.title} />
       <Post postData={post} />
-    </div>
+    </Layout>
   )
 }
