@@ -3,6 +3,18 @@ import styled from 'styled-components'
 
 import gif from '../assets/404.gif'
 
+export default () => (
+  <Styled404>
+    <p>
+      Yikes! This page doesn't exist!{' '}
+      <span role={'img'} aria-label={'grimmacing'}>
+        😬
+      </span>
+    </p>
+    <img src={gif} alt={'404'} />
+  </Styled404>
+)
+
 const Styled404 = styled.div`
   display: flex;
   flex-direction: column;
@@ -19,7 +31,7 @@ const Styled404 = styled.div`
   }
   img {
     width: 38rem;
-    border: 4px solid #FEC83E;
+    border: 4px solid #fec83e;
     border-radius: 4px;
     margin-bottom: 2rem;
     width: 50%;
@@ -27,10 +39,3 @@ const Styled404 = styled.div`
     min-width: 15rem;
   }
 `
-
-export default () => (
-  <Styled404>
-    <p>Yikes! This page doesn't exist! 😬</p>
-    <img src={gif} />
-  </Styled404>
-)

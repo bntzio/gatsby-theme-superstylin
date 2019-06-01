@@ -1,6 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
+export default ({ children }) => {
+  return <StyledMenu>{children}</StyledMenu>
+}
+
 const StyledMenu = styled.ul`
   list-style-type: none;
   padding-left: 0;
@@ -39,13 +43,3 @@ const StyledMenu = styled.ul`
     }
   }
 `
-
-const Menu = ({ children }) => {
-  return (
-    <StyledMenu>
-      {children}
-    </StyledMenu>
-  )
-}
-
-export default Menu

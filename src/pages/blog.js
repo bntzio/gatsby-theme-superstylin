@@ -1,20 +1,12 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 
 import PostList from '../components/PostList'
+import Layout from '../components/Layouts/blog'
 
-export default ({ data }) => {
-  const posts = data.allMarkdownRemark.edges
-
-  return <PostList posts={posts} />
-}
-
-// eslint-disable-next-line
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(
-      limit: 10
-      sort: { fields: [frontmatter___date], order: ASC }
-    ) {
+    allMarkdownRemark(limit: 10, sort: { fields: [frontmatter___date], order: ASC }) {
       edges {
         node {
           id
@@ -27,3 +19,13 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default ({ data, location }) => {
+  const posts = data.allMarkdownRemark.edges
+
+  return (
+    <Layout location={location}>
+      <PostList posts={posts} />
+    </Layout>
+  )
+}

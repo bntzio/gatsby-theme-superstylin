@@ -1,6 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
+export default ({ children }) => {
+  return <StyledFooter>{children}</StyledFooter>
+}
+
 const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
@@ -16,13 +20,3 @@ const StyledFooter = styled.footer`
     }
   }
 `
-
-const Footer = ({ children }) => {
-  return (
-    <StyledFooter>
-      {children}
-    </StyledFooter>
-  )
-}
-
-export default Footer

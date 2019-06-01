@@ -1,7 +1,7 @@
 const path = require('path')
 
-exports.onCreatePage = async ({ page, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions
 
   return new Promise((resolve, reject) => {
     if (page.path.match(/^\/blog/)) {
@@ -14,26 +14,28 @@ exports.onCreatePage = async ({ page, boundActionCreators }) => {
   })
 }
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions
 
   const postTemplate = path.resolve('src/templates/post.js')
 
-  return graphql(`{
-    allMarkdownRemark {
-      edges {
-        node {
-          html
-          id
-          frontmatter {
-            path
-            title
-            date
+  return graphql(`
+    {
+      allMarkdownRemark {
+        edges {
+          node {
+            html
+            id
+            frontmatter {
+              path
+              title
+              date
+            }
           }
         }
       }
     }
-  }`).then(res => {
+  `).then(res => {
     if (res.errors) {
       return Promise.reject(res.errors)
     }

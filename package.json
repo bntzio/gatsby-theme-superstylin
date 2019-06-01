@@ -23,17 +23,20 @@
   },
   "homepage": "https://github.com/bntzio/gatsby-starter-superstylin#readme",
   "dependencies": {
-    "gatsby": "^1.9.139",
-    "gatsby-link": "^1.6.32",
-    "gatsby-plugin-react-helmet": "^2.0.6",
-    "gatsby-plugin-styled-components": "^2.0.9",
-    "gatsby-source-filesystem": "^1.5.26",
-    "gatsby-transformer-remark": "^1.7.34",
-    "moment": "^2.21.0",
-    "react-helmet": "^5.2.0",
+    "babel-plugin-styled-components": "^1.10.0",
+    "gatsby": "^2.8.2",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-source-filesystem": "^2.0.38",
+    "gatsby-transformer-remark": "^2.3.12",
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
     "styled-components": "2.4.0"
   },
   "devDependencies": {
-    "standard": "^11.0.0"
+    "prettier": "^1.17.1",
+    "standard": "^12.0.1"
   }
 }

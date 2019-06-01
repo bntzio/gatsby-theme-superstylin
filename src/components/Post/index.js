@@ -2,6 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 import moment from 'moment'
 
+export default ({ postData }) => {
+  const { html, frontmatter } = postData
+  const m = moment(frontmatter.date, 'YYYY MM DD')
+
+  return (
+    <StyledPost>
+      <h1>{frontmatter.title}</h1>
+      <p id={'date'}>Published on {m.format('MMM Do YYYY')}</p>
+      <div className={'postBody'} dangerouslySetInnerHTML={{ __html: html }} />
+    </StyledPost>
+  )
+}
+
 const StyledPost = styled.div`
   padding: 2rem;
   width: 100%;
@@ -37,20 +50,3 @@ const StyledPost = styled.div`
     }
   }
 `
-
-const Post = ({ postData }) => {
-  const { html, frontmatter } = postData
-  const m = moment(frontmatter.date, 'YYYY MM DD')
-  return (
-    <StyledPost>
-      <h1>{frontmatter.title}</h1>
-      <p id='date'>Published on { m.format('MMM Do YYYY') }</p>
-      <div
-        className='postBody'
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-    </StyledPost>
-  )
-}
-
-export default Post

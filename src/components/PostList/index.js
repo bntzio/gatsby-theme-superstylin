@@ -1,6 +1,20 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
+
+export default ({ posts }) => {
+  return (
+    <StyledPostList>
+      {posts.map(({ node: post }) => {
+        return (
+          <h2 key={post.id}>
+            <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
+          </h2>
+        )
+      })}
+    </StyledPostList>
+  )
+}
 
 const StyledPostList = styled.ul`
   list-style-type: none;
@@ -19,19 +33,3 @@ const StyledPostList = styled.ul`
     }
   }
 `
-
-const PostList = ({ posts }) => {
-  return (
-    <StyledPostList>
-      {posts.map(({ node: post }) => {
-        return (
-          <h2 key={post.id}>
-            <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-          </h2>
-        )
-      })}
-    </StyledPostList>
-  )
-}
-
-export default PostList

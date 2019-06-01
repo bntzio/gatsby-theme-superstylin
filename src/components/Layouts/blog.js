@@ -1,19 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
-import BlogHeader from '../components/BlogHeader'
+import BlogHeader from '../BlogHeader'
 
 const Main = styled.main`
   padding: 0 1rem;
 `
 
-const TemplateWrapper = ({children, location}) => (
+const TemplateWrapper = ({ children, location }) => (
   <Main>
     <Helmet
-      title='Superstylin | A Gatsby Starter with Style 🕶️'
+      title={'Superstylin | A Gatsby Starter with Style 🕶️'}
       link={[
         {
           rel: 'stylesheet',
@@ -22,10 +22,12 @@ const TemplateWrapper = ({children, location}) => (
       ]}
     />
     <BlogHeader>
-      <h1><Link to={location.pathname === '/blog' ? '/' : '/blog'}>Superstylin'</Link></h1>
+      <h1>
+        <Link to={location.pathname === '/blog' ? '/' : '/blog'}>Superstylin'</Link>
+      </h1>
     </BlogHeader>
 
-    {children()}
+    {children}
   </Main>
 )
 

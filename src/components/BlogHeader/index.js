@@ -1,6 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
+export default ({ children }) => {
+  return <StyledHeader>{children}</StyledHeader>
+}
+
 const StyledHeader = styled.div`
   text-align: left;
   margin-left: 1.4rem;
@@ -14,7 +18,7 @@ const StyledHeader = styled.div`
     border-bottom: 4px solid red;
     display: inline-flex;
     a {
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
       padding: 0 4px;
       color: red;
       text-decoration: none;
@@ -25,13 +29,3 @@ const StyledHeader = styled.div`
     }
   }
 `
-
-const Header = ({ children }) => {
-  return (
-    <StyledHeader>
-      {children}
-    </StyledHeader>
-  )
-}
-
-export default Header

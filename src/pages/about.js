@@ -1,6 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
 
+export default () => (
+  <StyledAbout>
+    <p>
+      Superstylin is a{' '}
+      <a href={'https://www.gatsbyjs.org'} target={'_blank'}>
+        Gatsby
+      </a>{' '}
+      starter designed to get you up and running with{' '}
+      <a href={'https://www.styled-components.com'} target={'_blank'}>
+        styled-components
+      </a>{' '}
+      💅
+      <br />
+      You can think of this starter as a super simple boilerplate for your next static site.
+      <br />
+      Feel free to explore the structure of this starter and tweak it for your own needs.
+    </p>
+  </StyledAbout>
+)
+
 const StyledAbout = styled.div`
   display: flex;
   flex-direction: column;
@@ -22,13 +42,3 @@ const StyledAbout = styled.div`
     }
   }
 `
-
-export default () => (
-  <StyledAbout>
-    <p>
-      Superstylin is a <a href='https://www.gatsbyjs.org' target='_blank'>Gatsby</a> starter designed to get you up and running with <a href='https://www.styled-components.com' target='_blank'>styled-components</a> 💅<br />
-      You can think of this starter as a super simple boilerplate for your next static site.<br />
-      Feel free to explore the structure of this starter and tweak it for your own needs.
-    </p>
-  </StyledAbout>
-)
