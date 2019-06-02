@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import PrismCode from 'react-prism'
 
 import Nav from './Nav'
+import Modal from './Modal'
 
 const links = [
   {
@@ -18,9 +19,12 @@ const links = [
 ]
 
 export default () => {
+  const [modal, setModal] = useState(false)
+
   return (
     <Hero>
-      <Nav links={links} />
+      <Nav links={links} setModal={setModal} />
+      {modal ? <Modal open={setModal} /> : null}
       <Logo>
         <Title>Superstylin</Title>
         <Tagline>
