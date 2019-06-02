@@ -1,11 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useSpring, animated } from 'react-spring'
 
 import icon from '../assets/x-circle.svg'
 
 export default ({ open }) => {
+  const { opacity, transform } = useSpring({
+    from: { opacity: 0, transform: `translateY(-50px)` },
+    opacity: 1,
+    transform: `translateY(0)`
+  })
+
   return (
-    <Modal>
+    <Modal style={{ opacity, transform }}>
       <Close onClick={() => open(false)}>
         <Icon icon={icon} />
       </Close>
@@ -40,7 +47,7 @@ export default ({ open }) => {
   )
 }
 
-const Modal = styled.div`
+const Modal = styled(animated.div)`
   position: absolute;
   top: 25%;
   left: 5%;
