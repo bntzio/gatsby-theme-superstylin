@@ -1,58 +1,46 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
+import GitHubButton from 'react-github-btn'
 
-import Header from '../Header'
-import Footer from '../Footer'
+const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
 
-const TemplateWrapper = ({ children }) => (
-  <Main>
-    <Helmet
-      title={'Superstylin | A Gatsby Starter with Style 🕶️'}
-      link={[
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Lato|Poppins:700i'
-        }
-      ]}
-    />
-    <Header>
-      <h1>
-        <Link to={'/'}>Superstylin'</Link>
-      </h1>
-      <h2>
-        A <span>Gatsby Starter</span> with <span>Style</span>{' '}
-        <span role={'img'} aria-label={'sunglasses'}>
-          ️️🕶️
-        </span>
-      </h2>
-    </Header>
-
-    {children}
-
-    <Footer>
-      <p>
-        Made by{' '}
-        <a href={'https://twitter.com/bntzio'} target={'_blank'}>
-          @bntzio
-        </a>{' '}
-        with{' '}
-        <span role={'img'} aria-label={'heart'}>
-          ❤️
-        </span>
-      </p>
-    </Footer>
-  </Main>
-)
-
-TemplateWrapper.propTypes = {
-  children: PropTypes.func
-}
-
-const Main = styled.main`
-  padding: 0 1rem;
+  body {
+    font-family: 'Lato', sans-serif;
+  }
 `
 
-export default TemplateWrapper
+export default ({ children }) => (
+  <>
+    <Helmet>
+      <title>{`Superstylin | A Gatsby Starter with styled-components`}</title>
+      <link
+        rel={'stylesheet'}
+        href={'https://fonts.googleapis.com/css?family=Lato:400|700|Noto+Sans:700|Roboto+Mono:500&display=swap'}
+      />
+    </Helmet>
+    <GlobalStyle />
+    {children}
+    <GitHub>
+      <GitHubButton
+        href={'https://github.com/bntzio/gatsby-starter-superstylin'}
+        data-size={'large'}
+        data-show-count={'true'}
+        aria-label={'Star bntzio/gatsby-starter-superstylin on GitHub'}
+      >
+        Star
+      </GitHubButton>
+    </GitHub>
+  </>
+)
+
+const GitHub = styled.div`
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+`
