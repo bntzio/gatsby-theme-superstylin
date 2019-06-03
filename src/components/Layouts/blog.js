@@ -27,7 +27,7 @@ export default ({ children, location }) => (
     </Helmet>
     <GlobalStyle />
     <LogoContainer>
-      <Logo withBg />
+      <Logo withBg location={location} />
     </LogoContainer>
     {children}
   </Main>

@@ -4,9 +4,17 @@ import { Link } from 'gatsby'
 
 const bg = 'url(/assets/bg-circle-network.svg), linear-gradient(-135deg, #bf37ff 0, #ff6a85 50%, #fe9c5a 80%)'
 
-export default ({ withBg }) => (
+const createNewPath = location => {
+  if (!location || location.pathname === '/blog') {
+    return '/'
+  }
+
+  return '/blog'
+}
+
+export default ({ withBg, location }) => (
   <Wrapper>
-    <Link to={'/'} style={{ textDecoration: 'none' }}>
+    <Link to={createNewPath(location)} style={{ textDecoration: 'none' }}>
       <Logo withBg={withBg}>
         <Title withBg={withBg}>Superstylin</Title>
         {!withBg ? (
