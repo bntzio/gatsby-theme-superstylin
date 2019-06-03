@@ -4,36 +4,16 @@ import PrismCode from 'react-prism'
 
 import Nav from './Nav'
 import Modal from './Modal'
-
-const links = [
-  {
-    id: 1,
-    name: 'About',
-    url: '/about'
-  },
-  {
-    id: 2,
-    name: 'Blog',
-    url: '/blog'
-  }
-]
+import Logo from './Logo'
 
 export default () => {
   const [modal, setModal] = useState(false)
 
   return (
     <Hero>
-      <Nav links={links} setModal={setModal} />
+      <Nav setModal={setModal} />
       {modal ? <Modal open={setModal} /> : null}
-      <Logo>
-        <Title>Superstylin</Title>
-        <Tagline>
-          Where speed and design comes together{' '}
-          <span role={'img'} aria-label={'zap'}>
-            ⚡
-          </span>
-        </Tagline>
-      </Logo>
+      <Logo />
       <Content>
         <Description>
           A Gatsby Starter with styled-components{' '}
@@ -73,22 +53,6 @@ const Hero = styled.section`
     padding: 10rem 12rem;
     background-position: center;
   }
-`
-
-const Logo = styled.div`
-  border: 3.7px solid white;
-  align-self: center;
-  padding: 2rem;
-`
-
-const Title = styled.h1`
-  font-size: 4rem;
-  font-family: 'Noto Sans', sans-serif;
-  margin-top: -1rem;
-`
-
-const Tagline = styled.em`
-  font-size: 1.2rem;
 `
 
 const Content = styled.div`

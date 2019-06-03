@@ -2,19 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
-export default ({ links, setModal }) => (
+export default ({ setModal }) => (
   <Nav>
-    {links.map(link =>
-      link.url === '/about' ? (
-        <AboutLink key={link.id} onClick={() => setModal(prevState => !prevState)}>
-          {link.name}
-        </AboutLink>
-      ) : (
-        <StyledLink key={link.id} to={link.url}>
-          {link.name}
-        </StyledLink>
-      )
-    )}
+    <AboutLink onClick={() => setModal(prevState => !prevState)}>About</AboutLink>
+    <StyledLink to={'/blog'}>Articles</StyledLink>
   </Nav>
 )
 

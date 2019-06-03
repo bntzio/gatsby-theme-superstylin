@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import PostList from '../components/PostList'
+import Articles from '../components/Articles'
 import Layout from '../components/layouts/blog'
 
 export const pageQuery = graphql`
@@ -21,11 +21,11 @@ export const pageQuery = graphql`
 `
 
 export default ({ data, location }) => {
-  const posts = data.allMarkdownRemark.edges
+  const articles = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location}>
-      <PostList posts={posts} />
+      <Articles articles={articles} />
     </Layout>
   )
 }

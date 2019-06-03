@@ -7,15 +7,15 @@ export default ({ postData }) => {
   const m = moment(frontmatter.date, 'YYYY MM DD')
 
   return (
-    <StyledPost>
+    <Post>
       <h1>{frontmatter.title}</h1>
       <p id={'date'}>Published on {m.format('MMM Do YYYY')}</p>
       <div className={'postBody'} dangerouslySetInnerHTML={{ __html: html }} />
-    </StyledPost>
+    </Post>
   )
 }
 
-const StyledPost = styled.div`
+const Post = styled.div`
   padding: 2rem;
   width: 100%;
   box-sizing: border-box;
