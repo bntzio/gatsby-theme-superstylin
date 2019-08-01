@@ -6,6 +6,8 @@ import Nav from './Nav'
 import Modal from './Modal'
 import Logo from './Logo'
 
+import bg from './../assets/bg-circle-network.svg'
+
 export default () => {
   const [modal, setModal] = useState(false)
 
@@ -16,16 +18,16 @@ export default () => {
       <Logo />
       <Content>
         <Description>
-          A Gatsby Starter with styled-components{' '}
+          A Gatsby Theme with styled-components{' '}
           <span role={'img'} aria-label={'zap'}>
             💅
           </span>
         </Description>
         <Text>Build blazing fast websites with astonish design.</Text>
-        <Install>{`~ gatsby new my-awesome-site https://github.com/bntzio/gatsby-starter-superstylin`}</Install>
+        <Install>{`~ yarn add gatsby-theme-superstylin`}</Install>
         <InstallDesktop>
           <PrismCode component={'pre'} className={'language-bash'}>
-            {`~ gatsby new my-awesome-site https://github.com/bntzio/gatsby-starter-superstylin`}
+            {`~ yarn add gatsby-theme-superstylin`}
           </PrismCode>
         </InstallDesktop>
       </Content>
@@ -41,7 +43,8 @@ const Hero = styled.section`
   width: 100%;
   height: 100vh;
   padding: 5rem 6rem;
-  background-image: url(/assets/bg-circle-network.svg), linear-gradient(-135deg, #bf37ff 0, #ff6a85 50%, #fe9c5a 80%);
+  background-image: url(${bg}),
+    linear-gradient(-135deg, #bf37ff 0, #ff6a85 50%, #fe9c5a 80%);
   background-position: center;
   background-repeat: no-repeat, no-repeat;
   background-size: auto 95%, cover;

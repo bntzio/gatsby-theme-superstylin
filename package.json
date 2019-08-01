@@ -1,46 +1,7 @@
 {
-  "name": "gatsby-starter-superstylin",
-  "version": "2.0.1",
-  "description": "A Gatsby starter with styled-components",
-  "main": "n/a",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bntzio/gatsby-starter-superstylin.git"
-  },
-  "keywords": [
-    "react",
-    "gatsby",
-    "styled-components"
-  ],
-  "author": "Enrique Benitez <bntz.io>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bntzio/gatsby-starter-superstylin/issues"
-  },
-  "homepage": "https://github.com/bntzio/gatsby-starter-superstylin#readme",
-  "dependencies": {
-    "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.8.2",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-styled-components": "^3.0.7",
-    "gatsby-source-filesystem": "^2.0.38",
-    "gatsby-transformer-remark": "^2.3.12",
-    "moment": "^2.24.0",
-    "prismjs": "^1.16.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-github-btn": "^1.0.5",
-    "react-helmet": "^5.2.1",
-    "react-prism": "^4.3.2",
-    "react-spring": "^8.0.20",
-    "styled-components": "4.2.1"
-  },
-  "devDependencies": {
-    "prettier": "^1.17.1",
-    "standard": "^12.0.1"
-  }
+  "private": true,
+  "workspaces": [
+    "theme",
+    "demo"
+  ]
 }

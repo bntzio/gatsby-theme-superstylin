@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
+import photo from './../assets/photo.jpg'
+
 export default ({ title, path }) => (
   <Link to={path} style={{ textDecoration: 'none' }}>
     <Article>
@@ -9,8 +11,8 @@ export default ({ title, path }) => (
       <Content>
         <Title>{title}</Title>
         <Summary>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </Summary>
       </Content>
     </Article>
@@ -33,7 +35,7 @@ const Article = styled.div`
 const Poster = styled.div`
   width: 100%;
   height: 100%;
-  background-image: url('/assets/photo.jpg');
+  background-image: url(${photo});
   background-position: center;
   background-position-y: 0;
   background-repeat: no-repeat;

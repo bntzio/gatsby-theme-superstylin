@@ -1,5 +1,3 @@
-const path = require('path')
-
 exports.onCreatePage = async ({ page, actions }) => {
   const { createPage } = actions
 
@@ -17,7 +15,7 @@ exports.onCreatePage = async ({ page, actions }) => {
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
-  const postTemplate = path.resolve('src/templates/post.js')
+  const postTemplate = require.resolve('./src/templates/post.js')
 
   return graphql(`
     {

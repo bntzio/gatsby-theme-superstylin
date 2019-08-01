@@ -6,7 +6,10 @@ import Layout from '../components/layouts/blog'
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(limit: 10, sort: { fields: [frontmatter___date], order: ASC }) {
+    allMarkdownRemark(
+      limit: 10
+      sort: { fields: [frontmatter___date], order: ASC }
+    ) {
       edges {
         node {
           id

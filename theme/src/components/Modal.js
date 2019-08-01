@@ -23,12 +23,14 @@ export default ({ open }) => {
         </span>{' '}
       </Title>
       <Body>
-        Superstylin is a Gatsby starter designed to get you up and running with styled-components{' '}
+        Superstylin is a Gatsby Theme designed to get you up and running with
+        styled-components{' '}
         <span role={'img'} aria-label={'nail_care'}>
           💅
         </span>{' '}
-        Think of this starter as a step-stone for your next badass static site, and feel free to explore the project
-        structure to tweak it for your own needs{' '}
+        Think of this theme as a step-stone for your next badass static site,
+        and feel free to explore the project structure to tweak it for your own
+        needs{' '}
         <span role={'img'} aria-label={'wink'}>
           😉
         </span>{' '}

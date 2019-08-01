@@ -1,0 +1,49 @@
+{
+  "name": "gatsby-theme-superstylin",
+  "version": "0.0.0",
+  "description": "A Gatsby Theme with styled-components",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bntzio/gatsby-theme-superstylin.git"
+  },
+  "keywords": [
+    "react",
+    "gatsby",
+    "gatsby-theme",
+    "styled-components"
+  ],
+  "author": "Enrique Benitez <bntz.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bntzio/gatsby-theme-superstylin/issues"
+  },
+  "homepage": "https://github.com/bntzio/gatsby-theme-superstylin#readme",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
+    "gatsby": "^2.8.2",
+    "gatsby-plugin-page-creator": "^2.1.5",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-source-filesystem": "^2.0.38",
+    "gatsby-transformer-remark": "^2.3.12",
+    "moment": "^2.24.0",
+    "prismjs": "^1.16.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-github-btn": "^1.0.5",
+    "react-helmet": "^5.2.1",
+    "react-prism": "^4.3.2",
+    "react-spring": "^8.0.20",
+    "styled-components": "4.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.1",
+    "standard": "^12.0.1"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.13.45",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

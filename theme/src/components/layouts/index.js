@@ -18,20 +18,22 @@ const GlobalStyle = createGlobalStyle`
 export default ({ children }) => (
   <>
     <Helmet>
-      <title>{`Superstylin | A Gatsby Starter with styled-components`}</title>
+      <title>{`Superstylin | A Gatsby Theme with styled-components`}</title>
       <link
         rel={'stylesheet'}
-        href={'https://fonts.googleapis.com/css?family=Lato:400|700|Noto+Sans:700|Roboto+Mono:500&display=swap'}
+        href={
+          'https://fonts.googleapis.com/css?family=Lato:400|700|Noto+Sans:700|Roboto+Mono:500&display=swap'
+        }
       />
     </Helmet>
     <GlobalStyle />
     {children}
     <GitHub>
       <GitHubButton
-        href={'https://github.com/bntzio/gatsby-starter-superstylin'}
+        href={'https://github.com/bntzio/gatsby-theme-superstylin'}
         data-size={'large'}
         data-show-count={'true'}
-        aria-label={'Star bntzio/gatsby-starter-superstylin on GitHub'}
+        aria-label={'Star bntzio/gatsby-theme-superstylin on GitHub'}
       >
         Star
       </GitHubButton>
