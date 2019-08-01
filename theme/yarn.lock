@@ -4340,6 +4340,20 @@ gatsby-link@^2.1.1:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
+gatsby-page-utils@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-0.0.5.tgz#faefc2ece9f14bfd161ddd0104d1e12b54ef7a70"
+  integrity sha512-yHL4OKgVEOWOuTUCO2ZPPmWyA1bAtSUPrf+W5w3p24pUwqMkz2Yu2hii/PhgQs+2ap6BkpSwBjBSYS2YLRmTNg==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    bluebird "^3.5.0"
+    chokidar "2.1.2"
+    fs-exists-cached "^1.0.0"
+    glob "^7.1.1"
+    lodash "^4.17.14"
+    micromatch "^3.1.10"
+    slash "^1.0.0"
+
 gatsby-plugin-page-creator@^2.0.13:
   version "2.0.13"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.0.13.tgz#ba5d1af97b6fce9e41ae3e617699eed9c3682bde"
@@ -4353,6 +4367,19 @@ gatsby-plugin-page-creator@^2.0.13:
     lodash "^4.17.10"
     micromatch "^3.1.10"
     slash "^1.0.0"
+
+gatsby-plugin-page-creator@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.1.5.tgz#723fc0392a67978cab649a402ad88f6f06b74e4c"
+  integrity sha512-nUcsaJAaMy9UQS66QY0Dys6Xx+2CGG2EVyvDQ4NQ713la62jicOU764Bmi5G7sE2QGgpNoBtUQCW+aE6UMGpLQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    bluebird "^3.5.0"
+    fs-exists-cached "^1.0.0"
+    gatsby-page-utils "^0.0.5"
+    glob "^7.1.1"
+    lodash "^4.17.14"
+    micromatch "^3.1.10"
 
 gatsby-plugin-react-helmet@^3.0.12:
   version "3.0.12"
@@ -6237,9 +6264,9 @@ lodash.memoize@^4.1.2:
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
 lodash.mergewith@^4.6.1:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.1.tgz#639057e726c3afbdb3e7d42741caa8d6e4335927"
-  integrity sha512-eWw5r+PYICtEBgrBE5hhlT6aAa75f411bgDz/ZL2KZqYV03USvucsxcHUIlGTDTECs1eunpI7HOV7U+WLDvNdQ==
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.2.tgz#617121f89ac55f59047c7aec1ccd6654c6590f55"
+  integrity sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==
 
 lodash.throttle@^4.1.1:
   version "4.1.1"
@@ -6262,6 +6289,11 @@ lodash@^4.11.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.5:
 lodash@^4.13.1, lodash@^4.17.4, lodash@^4.3.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+
+lodash@^4.17.14:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
 log-update@^3.0.0:
   version "3.2.0"
