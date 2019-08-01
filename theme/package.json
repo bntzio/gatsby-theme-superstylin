@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-superstylin",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A Gatsby Theme with styled-components",
   "main": "index.js",
   "repository": {
